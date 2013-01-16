@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.11'
+gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
+gem 'will_paginate'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,6 +24,15 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development do
+  gem 'annotate'
+end
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec-rails'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
